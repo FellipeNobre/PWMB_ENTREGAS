@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gráfico de Tendência</title>
+  <link rel="stylesheet" href="/assets/css/tendencia.css">
+  <link rel="shortcut icon" href="./assets/image/visiontech.Imagem.png" type="image/x-icon">
+</head>
+<body>
+<div class="menu">
+    <button class="button" onclick="voltarPagina()">Página Inicial</button>
+    <h2 class="logo">Gráfico de Tendência</h2>
+    <div></div>
+  </div>
+
+  <div class="chart">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/assets/js/tendencia.js"></script>
+
+  <script>
+    function voltarPagina() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

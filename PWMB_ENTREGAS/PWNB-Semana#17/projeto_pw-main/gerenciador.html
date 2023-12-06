@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Análise de Dados de Negócios</title>
+  <link rel="stylesheet" href="/assets/css/gerenciador.css">
+  <link rel="shortcut icon" href="./assets/image/visiontech.Imagem.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <a href="/" class="voltar-btn">Página Inicial</a>
+    <h1>Dashboard de Análise de Dados de Negócios</h1>
+  </header>
+
+  <main>
+    <section class="content">
+      <article class="visualizacao grafico">
+        <canvas id="myChart" aria-label="Gráfico de vendas mensais"></canvas>
+      </article>
+
+      <article class="visualizacao grafico">
+        <canvas id="myCircularChart" aria-label="Gráfico circular de vendas"></canvas>
+      </article>
+
+      <DIV>
+        <article class="visualizacao tabela">
+          <h2>Tabela de Vendas Mensais</h2>
+          <table id="myTable">
+            <caption>Dados de Vendas</caption>
+            <thead>
+              <tr>
+                <th scope="col">Mês</th>
+                <th scope="col">Vendas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Janeiro</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>Fevereiro</td>
+                <td>750</td>
+              </tr>
+              <tr>
+                <td>Março</td>
+                <td>900</td>
+              </tr>
+              <tr>
+                <td>Abril</td>
+                <td>600</td>
+              </tr>
+              <tr>
+                <td>Maio</td>
+                <td>1200</td>
+              </tr>
+              <tr>
+                <td>Junho</td>
+                <td>850</td>
+              </tr>
+            </tbody>
+          </table>
+      </DIV>
+     
+    </section>
+  </main>
+
+  <script src="/assets/js/gerenciador.js" defer></script>
+</body>
+</html>

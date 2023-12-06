@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/cadastro.css">
+    <link rel="shortcut icon" href="./assets/image/visiontech.Imagem.png" type="image/x-icon">
+    <title>Cadastro - Analise de negócios</title>
+</head>
+<body>
+    <nav class="menu">
+        <!-- Seu menu existente aqui -->
+        <ul>
+            <li class="logo">
+                <img src="./assets/image/visiontech.Imagem.png" alt="Logo"></a>
+            </li>
+            <li><a href="/index.html">Home</a></li>
+            <li>
+                <a href="/login.html">Login</a>
+                <ul class="submenu">
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">Recuperar Senha</a></li>
+                </ul>
+            </li>
+            <!-- Resto do seu menu -->
+        </ul>
+    </nav>
+
+    <!-- Formulário de Cadastro -->
+    <div class="cadastro-form">
+        <form action="#" method="post" id="cadastro-form">
+            <label for="new-username">Novo Usuário:</label>
+            <input type="text" id="new-username" name="new-username" required>
+    
+            <label for="new-email">Novo Email:</label>
+            <input type="email" id="new-email" name="new-email" required>
+    
+            <label for="new-password">Nova Senha:</label>
+            <input type="password" id="new-password" name="new-password" required>
+    
+            <label for="confirm-password">Confirmar Senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+    
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div id="mensagem-cadastro" style="display: none;">
+            Cadastro feito com sucesso!
+        </div>
+    </div>
+    <script src="./assets/js/cadastro.js"></script>
+</body>
+</html>

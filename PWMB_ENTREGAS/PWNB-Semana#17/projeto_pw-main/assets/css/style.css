@@ -1,0 +1,192 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+  padding: 1px;
+  margin: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: rgb(25, 25, 124);
+  color: #fff;
+  border-radius: 5px;
+}
+.menu .logo img {
+  width: 100px;
+  vertical-align: middle;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-top: 3px solid #555;
+}
+
+.menu ul li:hover .submenu {
+  display: block;
+}
+
+.submenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.submenu ul li {
+  margin-right: 0;
+  border-bottom: 1px solid #555;
+}
+
+.submenu a {
+  padding: 10px 20px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+  background-color: rgb(25, 25, 124);
+  color: #fff;
+  border-radius: 2px;
+}
+
+header {
+  background: linear-gradient(180deg, #C9F2FF 0%, #E6FCFF 96.63%);
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que os elementos se ajustem em dispositivos menores */
+}
+
+.header-text {
+  flex: 1;
+  margin-left: 200px;
+  margin-top: 20px; /* Adicione um espaço superior em dispositivos menores */
+  font-size: 20px;
+}
+
+.header-image {
+  flex: 1;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estilos para o título */
+.content h2 {
+  margin-bottom: 20px;
+  max-width: 800px;
+  color: rgb(33, 33, 60);
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+/* Estilos para a seção de botões */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Estilos para os botões */
+.buttons button {
+  padding: 14px 40px;
+  background-color: #ccc; /* Cor cinza clara */
+  color: #fff;
+  border: none;
+  border-radius: 50px; /* Deixa os botões arredondados */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none; /* Remove a borda padrão ao focar */
+  margin: 8px;
+}
+
+.buttons button.selected {
+  background-color: rgb(25, 25, 124); /* Cor de fundo ao ser selecionado */
+}
+
+/* Estilos para os botões quando são clicados */
+.buttons button:active {
+  background-color: rgb(25, 25, 124); /* Cor de fundo ao ser clicado */
+}
+
+/* Estilos para a seção de citação e imagem */
+.quote-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
+}
+.custom-content{
+  text-align: left;
+  font-size: 18px;
+}
+.custom-content p {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(33, 33, 60);
+}
+
+
+/* Estilos para a citação */
+/* Estilos para a imagem */
+.content-image {
+  flex: 1;
+  padding-left: 20px;
+  max-width: 50%;
+  text-align: center;
+}
+
+.content-image img {
+  max-width: 100%;
+  height: auto;
+}
